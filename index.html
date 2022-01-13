@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+  <a class="navbar-brand" href="https://www.nordicsemi.com/">
+    <img class="nordic-brand"src="/images/Logo_Flat_RGB_Vertical.svg" alt="" >
+  </a>
+    <form class="bd-search d-flex align-items-center" action="search.html" method="get">
+      <i class="icon fas fa-search"></i>
+      <input type="search" class="form-control" name="q" id="search-input" placeholder="Search all docs ..." aria-label="Search all docs ..." autocorrect="off" autocomplete="off" >
+    </form>
+   
+<div class="tab">
+  <button class="tablinks" onclick="openContent(event, 'nRF')">nRF Connect SDK</button>
+  <button class="tablinks" onclick="openContent(event, 'nrfx')">nrfx</button>
+  <button class="tablinks" onclick="openContent(event, 'nrfxlib')">nrfxlib</button>
+  <button class="tablinks" onclick="openContent(event, 'Zephyr')">Zephyr</button>
+  <button class="tablinks" onclick="openContent(event, 'MCUboot')">MCUboot</button>
+  <button class="tablinks" onclick="openContent(event, 'Trusted')">Trusted Firmware-M</button>
+  <button class="tablinks" onclick="openContent(event, 'Matter')">Matter</button>
+  <button class="tablinks" onclick="openContent(event, 'Kconfig')">Kconfig Reference</button> 
+</div>
+</div>
+
+<!--header-mobile-view-->
+<nav>
+ <div class="header-responsive">
+   <div class="heading-ncs">
+    <a href="#" class="icon-home" aria-hidden="true" data-toggle="rst-other-versions">nRF Connect SDK</a>
+    <span class="fa fa-chevron-down dropit"  aria-hidden="true"></span>
+   </div>
+
+    <div class="menu-search">
+      <a href="#">
+      <i class="icon fas fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="menu-search-container">
+      <div class="menu-search-input">
+        <form action="">
+          <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <input class="menu-search-input" type="text" aria-label="Search all docs..." placeholder="Search all docs..." autocorrect="off"  autocomplete="off">
+        </form>
+      </div>
+      <a class="menu-search-close" href="#">
+        <i class="fas fa-times search-clear" aria-hidden="true"></i>
+      </a> 
+    </div>
+
+  
+  </div>
+  <div class="rst-other-versions docset" id="demo">
+    <div class="ncs">
+      <a href="#" class="ncs-version">
+        <img class="nordic-brand-ncs"src="/images/nRF Connect SDK_symbol_blue_RGB.svg" alt="" >
+      <div class="version"> 1.7.99
+      <span class="fa fa-caret-down ncs-dropdown"   aria-hidden="true"></span>
+    </div></a>
+    <div class="dropdown">
+    <ul>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.8.0/nrf/index.html">1.8.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.7.1/nrf/index.html">1.7.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.7.0/nrf/index.html">1.7.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.6.1/nrf/index.html">1.6.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.6.0/nrf/index.html">1.6.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.5.2/nrf/index.html">1.5.2</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.5.1/nrf/index.html">1.5.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.5.0/nrf/index.html">1.5.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.4.2/nrf/index.html">1.4.2</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.4.1/nrf/index.html">1.4.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.4.0/nrf/index.html">1.4.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.3.2/nrf/index.html">1.3.2</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.3.1/nrf/index.html">1.3.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.3.0/nrf/index.html">1.3.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.1/nrf/index.html">1.2.1</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0/nrf/index.html">1.2.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.1.0/nrf/index.html">1.1.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.0.0/nrf/index.html">1.0.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/0.4.0/nrf/index.html">0.4.0</a>
+      </li>
+      <li>
+        <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/0.3.0/nrf/index.html">0.3.0</a>
+      </li>
+
+    </ul>
+  </div>
+    </div>
+
+    <div class="nrfx">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrfx/index.html">nrfx</a>
+    </div>
+    <div class="nrfxlib">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrfxlib/README.html">nrfxlib</a>
+    </div>
+    <div class="zephyr">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/index.html">Zephyr</a>
+    </div>
+    <div class="mcuboot">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/zephyr/index.html">MCUboot</a>
+    </div>
+    <div class="tfm">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/tfm/index.html">Trusted Firmware-M</a>
+    </div>
+    <div class="matter">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/matter/index.html">Matter</a>
+    </div>
+    <div class="kconfig">
+      <a href="https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/kconfig/index.html">Kconfig Reference</a>
+    </div>
+
+    
+  </div>  
+</nav>
+
+<div id="nRF" class="tabcontent">
+  <h3>nRF Connect SDK</h3>
+</div>
+
+<div id="nrfx" class="tabcontent">
+  <h3>nrfx</h3>
+</div>
+
+<div id="nrfxlib" class="tabcontent">
+  <h3>nrfxlib</h3>
+</div>
+
+<div id="Zephyr" class="tabcontent">
+  <h3>Zephyr</h3>
+</div>
+
+<div id="MCUboot" class="tabcontent">
+  <h3>MCUboot</h3>
+</div>
+
+<div id="Trusted" class="tabcontent">
+  <h3>Trusted Firmware-M</h3>
+</div>
+
+<div id="Matter" class="tabcontent">
+  <h3>Matter</h3>
+</div>
+
+<div id="Kconfig" class="tabcontent">
+  <h3>Kconfig Reference</h3>
+</div>
+
+
+<script src="js/header.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+   
+ </body>
+</body>
+</html> 
